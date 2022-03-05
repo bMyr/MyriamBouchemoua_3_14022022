@@ -1,0 +1,19 @@
+{
+  "name": "myriambouchemoua_3_14022022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bMyr/MyriamBouchemoua_3_14022022.git"
+  },
+  "author": "Myriam Bouchemoua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bMyr/MyriamBouchemoua_3_14022022/issues"
+  },
+  "homepage": "https://github.com/bMyr/MyriamBouchemoua_3_14022022#readme"
+}
