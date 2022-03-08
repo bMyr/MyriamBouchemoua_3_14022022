@@ -1,3 +1,7 @@
+.fonctionnement {
+  margin: 50px 0px;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding: 20px;
@@ -70,7 +74,7 @@ footer ul li a i {
   height: 250px;
   background-color: white;
   box-shadow: 0px 0px 6px 0px #0000002e;
-  border-radius: 13px 13px 13px 13px;
+  border-radius: 13px;
   margin-bottom: 20px;
 }
 .card a {
@@ -88,4 +92,30 @@ footer ul li a i {
 }
 .card a .card-footer h3, .card a .card-footer p {
   margin: 0px;
+}
+
+.step-card {
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px 0px #0000002e;
+  display: flex;
+  position: relative;
+  margin: 20px 10px;
+  height: 60px;
+  align-items: center;
+}
+.step-card .number {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: #9356DC;
+  color: white;
+  text-align: center;
+  position: absolute;
+  left: -10px;
+}
+.step-card i {
+  color: #7e7e7e;
+  margin-left: 30px;
+  margin-right: 20px;
 }
