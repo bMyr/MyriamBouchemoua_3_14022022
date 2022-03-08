@@ -1,0 +1,25 @@
+.introduction {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    .localisation {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eaeaea;
+        i {
+            margin-right: 15px;
+        }
+        p {
+            margin: 0px;
+        }
+    }
+    h1{
+        margin-bottom: 0px;
+    }
+}

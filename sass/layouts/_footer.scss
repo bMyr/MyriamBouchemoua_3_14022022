@@ -1,0 +1,23 @@
+footer {
+    background-color: #353535;
+    color: white;
+    padding: 20px;
+    h3 {
+        margin: 0px;
+    }
+    ul {
+        list-style: none;
+        line-height: 25px;
+        padding: 0;
+        li{ 
+            a {
+                text-decoration: none;
+                color: white;
+                i {
+                    font-size: 12px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
