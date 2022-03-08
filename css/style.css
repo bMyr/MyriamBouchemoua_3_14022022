@@ -1,3 +1,8 @@
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -59,4 +64,28 @@ footer ul li a {
 footer ul li a i {
   font-size: 12px;
   width: 20px;
+}
+
+.card {
+  height: 250px;
+  background-color: white;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  border-radius: 13px 13px 13px 13px;
+  margin-bottom: 20px;
+}
+.card a {
+  color: black;
+  text-decoration: none;
+}
+.card a .card-image img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 13px 13px 0px 0px;
+}
+.card a .card-footer {
+  padding: 10px;
+}
+.card a .card-footer h3, .card a .card-footer p {
+  margin: 0px;
 }
