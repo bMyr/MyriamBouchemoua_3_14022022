@@ -1,10 +1,36 @@
 .fonctionnement {
   margin: 50px 0px;
 }
+.fonctionnement h2 {
+  padding-left: 20px;
+}
 
 .restaurants {
   background-color: #f6f6f6;
   padding: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.introduction .localisation p {
+  font-weight: 700;
+}
+.introduction p {
+  font-weight: 300;
+}
+
+.restaurants p {
+  font-weight: 300;
+}
+
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+}
+footer li {
+  font-size: 15px;
 }
 
 header {
