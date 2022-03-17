@@ -10,6 +10,12 @@
   padding: 20px;
 }
 
+main {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -31,6 +37,12 @@ footer h3 {
 }
 footer li {
   font-size: 15px;
+}
+
+.restaurant_name h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: lighter;
+  font-size: 30px;
 }
 
 header {
@@ -144,4 +156,45 @@ footer ul li a i {
   color: #7e7e7e;
   margin-left: 30px;
   margin-right: 20px;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  padding-top: 20px;
+  border-radius: 13px 13px 0px 0px;
+}
+.menu h1, .menu h2 {
+  margin: 15px;
+  margin-top: 30px;
+}
+
+.banner {
+  height: 200px;
+}
+
+.card_menu {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px 0px #0000002e;
+  padding: 10px 20px 5px 10px;
+  margin: 15px;
+}
+.card_menu h3 {
+  margin: 0px;
+}
+.card_menu .card_menu_detail {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0px;
+}
+
+.restaurant_name {
+  display: flex;
+  align-items: baseline;
+}
+.restaurant_name h1 {
+  margin-right: 30px;
+}
+.restaurant_name i {
+  font-size: 30px;
 }
