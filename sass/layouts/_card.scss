@@ -8,11 +8,21 @@
         color: black; 
         text-decoration: none;
         .card-image {
+            position: relative;
             img {
                 height: 180px;
                 width: 100%;
                 object-fit:cover;
                 border-radius: 13px 13px 0px 0px ;
+            }
+            .new {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                background-color:#99E2D0;
+                color: #008766;
+                padding: 5px 10px;
+                border-radius: 3px;
             }
         }
         .card-footer{
