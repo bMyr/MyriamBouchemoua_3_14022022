@@ -27,9 +27,26 @@
         }
         .card-footer{
             padding: 10px;
+            position: relative;
             h3,p {
                 margin: 0px;
             }
+            i {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 25px;
+                &.fa-solid {
+                    color: transparent;
+                    &:hover {
+                        background-image: linear-gradient(to left, #9356DC, #FF79DA);
+                        -webkit-background-clip: text;
+                        -moz-background-clip: text;
+                        background-clip: text;
+                    }
+                }
+            }
+
         }
     }
 }

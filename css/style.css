@@ -168,9 +168,25 @@ footer ul li a i {
 }
 .card a .card-footer {
   padding: 10px;
+  position: relative;
 }
 .card a .card-footer h3, .card a .card-footer p {
   margin: 0px;
+}
+.card a .card-footer i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 25px;
+}
+.card a .card-footer i.fa-solid {
+  color: transparent;
+}
+.card a .card-footer i.fa-solid:hover {
+  background-image: linear-gradient(to left, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
 .step_card {
