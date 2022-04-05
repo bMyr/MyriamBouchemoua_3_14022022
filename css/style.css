@@ -169,6 +169,24 @@ footer ul li a i {
 .card a .card-footer {
   padding: 10px;
   position: relative;
+  /*
+
+              i {
+                  position: absolute;
+                  top: 15px;
+                  right: 20px;
+                  font-size: 25px;
+                  &.fa-solid {
+                      color: transparent;
+                      &:hover {
+                          background-image: linear-gradient(to left, #9356DC, #FF79DA);
+                          -webkit-background-clip: text;
+                          -moz-background-clip: text;
+                          background-clip: text;
+                      }
+                  }
+              }
+              */
 }
 .card a .card-footer h3, .card a .card-footer p {
   margin: 0px;
@@ -179,10 +197,19 @@ footer ul li a i {
   right: 20px;
   font-size: 25px;
 }
+.card a .card-footer i.fa-regular {
+  z-index: 1;
+  background-color: white;
+  transform: scale(1);
+  transition: transform 2s;
+  transform-origin: 0% 0%;
+}
+.card a .card-footer i.fa-regular:hover {
+  color: white;
+  transform: scaleY(0);
+}
 .card a .card-footer i.fa-solid {
   color: transparent;
-}
-.card a .card-footer i.fa-solid:hover {
   background-image: linear-gradient(to left, #9356DC, #FF79DA);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -240,17 +267,28 @@ footer ul li a i {
   background-color: white;
   border-radius: 20px;
   box-shadow: 0px 2px 10px 0px #0000002e;
-  padding: 10px 20px 5px 10px;
   margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
-.card_menu h3 {
+.card_menu:hover > .card_menu_bar {
+  transform: scaleX(1);
+}
+.card_menu:hover > .card_menu_bar i {
+  transform: rotate(0deg);
+}
+.card_menu .card_menu_main {
+  padding: 10px 20px 5px 10px;
+}
+.card_menu .card_menu_main h3 {
   margin: 0px;
 }
-.card_menu .card_menu_detail {
+.card_menu .card_menu_main .card_menu_detail {
   display: flex;
   justify-content: space-between;
 }
-.card_menu .card_menu_detail p {
+.card_menu .card_menu_main .card_menu_detail p {
   min-width: 200px;
   height: 22px;
   overflow: hidden;
@@ -258,8 +296,24 @@ footer ul li a i {
   text-overflow: ellipsis;
   margin: 4px 0px;
 }
-.card_menu .card_menu_detail .price {
+.card_menu .card_menu_main .card_menu_detail .price {
   margin: 4px 0px;
+}
+.card_menu .card_menu_bar {
+  background-color: #99E2D0;
+  width: 20%;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_menu .card_menu_bar i {
+  color: white;
+  font-size: 20px;
+  transform: rotate(-360deg);
+  transition: transform 1s ease-in-out;
 }
 
 .restaurant_name {

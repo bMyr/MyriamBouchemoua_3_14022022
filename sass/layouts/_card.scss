@@ -31,6 +31,37 @@
             h3,p {
                 margin: 0px;
             }
+
+            i {
+                position: absolute;
+                top: 15px;
+                right: 20px;
+                font-size: 25px;
+                &.fa-regular {
+                    z-index: 1;
+                    background-color: white;
+                    transform:  scale(1);
+                    transition: transform 2s;
+                    transform-origin: 0% 0%;
+                    &:hover {
+                       color: white;
+                       transform:scaleY(0);
+                    }
+                }
+                &.fa-solid {
+                    color: transparent;
+                    background-image: linear-gradient(to left, #9356DC, #FF79DA);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    background-clip: text;
+        
+                }
+            }
+
+
+
+/*
+
             i {
                 position: absolute;
                 top: 15px;
@@ -46,6 +77,9 @@
                     }
                 }
             }
+            */
+
+
 
         }
     }
