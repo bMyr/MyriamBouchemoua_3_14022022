@@ -24,8 +24,7 @@
     }
 
     &:hover > .card_menu_bar{
-        transform: translateX(0px);
-        display: flex;
+        transform: scaleX(1);
         i {
             transform: rotate(0deg);
             transition: transform 1s ;
@@ -34,7 +33,7 @@
 
     &:hover > .price {
          padding-right: 20%;
-         transition: 0.5s ease;
+         transition: 0.5s;
         } 
     
         
@@ -60,19 +59,18 @@
         }
 
         .price {
-            margin: 4px 0px;
+            margin: 4px 10% 4px 0px;
             display: flex;
             align-items: center;
             padding-top: 25px;
-            padding-right: 5px;
         }
     
 
      .card_menu_bar{
          background-color: #99E2D0;
-         transform: translateX(200px);
+         transform: scaleX(0);
          transform-origin: 100% 50%;
-         transition: transform 700ms;
+         transition: transform 0.5s;
          display: flex;
          justify-content: center;
          align-items: center;

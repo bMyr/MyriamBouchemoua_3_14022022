@@ -1,5 +1,12 @@
+body {
+  margin: 0px;
+  background-color: #f6f6f6;
+}
+
 .fonctionnement {
-  margin: 50px 0px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 .fonctionnement h2 {
   padding-left: 20px;
@@ -11,9 +18,8 @@
 }
 
 .main_menu {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
+  top: -52px;
 }
 
 body {
@@ -92,10 +98,16 @@ header a i {
   padding: 10px;
 }
 .introduction .localisation i {
-  margin-right: 15px;
+  margin-right: 10px;
 }
-.introduction .localisation p {
-  margin: 0px;
+.introduction .localisation input {
+  border-style: none;
+  background: none;
+  padding: 5px;
+  width: 125px;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Roboto";
 }
 .introduction h1 {
   margin-bottom: 0px;
@@ -224,7 +236,7 @@ footer ul li a i {
   box-shadow: 0px 2px 10px 0px #0000002e;
   display: flex;
   position: relative;
-  margin: 20px 10px;
+  margin: 20px;
   height: 60px;
   align-items: center;
   cursor: pointer;
@@ -267,7 +279,12 @@ footer ul li a i {
 }
 
 .banner {
-  height: 200px;
+  height: 250px;
+}
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
 
 .card_menu {
@@ -296,8 +313,7 @@ footer ul li a i {
   animation-delay: 800ms;
 }
 .card_menu:hover > .card_menu_bar {
-  transform: translateX(0px);
-  display: flex;
+  transform: scaleX(1);
 }
 .card_menu:hover > .card_menu_bar i {
   transform: rotate(0deg);
@@ -305,7 +321,7 @@ footer ul li a i {
 }
 .card_menu:hover > .price {
   padding-right: 20%;
-  transition: 0.5s ease;
+  transition: 0.5s;
 }
 .card_menu .card_menu_detail {
   padding: 10px 10px 5px 10px;
@@ -327,17 +343,16 @@ footer ul li a i {
   margin: 4px 0px;
 }
 .card_menu .price {
-  margin: 4px 0px;
+  margin: 4px 10% 4px 0px;
   display: flex;
   align-items: center;
   padding-top: 25px;
-  padding-right: 5px;
 }
 .card_menu .card_menu_bar {
   background-color: #99E2D0;
-  transform: translateX(200px);
+  transform: scaleX(0);
   transform-origin: 100% 50%;
-  transition: transform 700ms;
+  transition: transform 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +394,6 @@ footer ul li a i {
 }
 .menu_button button {
   margin: 30px;
-  margin-bottom: 50px;
   padding: 10px 40px;
 }
 
