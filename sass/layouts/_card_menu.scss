@@ -8,6 +8,8 @@
     overflow: hidden;
     animation: card_appear 1s;
     animation-fill-mode: backwards;
+    position: relative;
+    cursor: pointer;
     &.card_1 {
         animation-delay: 200ms;
     }
@@ -20,46 +22,64 @@
     &.card_4 {
         animation-delay: 800ms;
     }
+
     &:hover > .card_menu_bar{
-        transform: scaleX(1);
+        transform: translateX(0px);
+        display: flex;
         i {
             transform: rotate(0deg);
             transition: transform 1s ;
         }
-    }
+     }
 
-    .card_menu_main {
-        padding: 10px 10px 5px 10px;
-        flex: 100%;
-        h3 {
-            margin: 0px;
-        }
+    &:hover > .price {
+         padding-right: 20%;
+         transition: 0.5s ease;
+        } 
+    
+        
         .card_menu_detail {
-            display: flex;
-            justify-content: space-between;
+            h3 {
+                margin: 0px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 400px;
+            }
+            padding: 10px 10px 5px 10px;
+            overflow: hidden;
+
             p {
-                min-width: 200px;
+                max-width: 400px;
                 height: 22px;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 margin: 4px 0px;
             }
-            .price {
-                margin: 4px 0px;
-            }
         }
-    }
+
+        .price {
+            margin: 4px 0px;
+            display: flex;
+            align-items: center;
+            padding-top: 25px;
+            padding-right: 5px;
+        }
+    
 
      .card_menu_bar{
          background-color: #99E2D0;
-         transform: scaleX(0);
+         transform: translateX(200px);
          transform-origin: 100% 50%;
          transition: transform 700ms;
          display: flex;
          justify-content: center;
          align-items: center;
          width: 20%;
+         position: absolute;
+         height: 100%;
+         right: -1px;
          i {
              color: white;
              font-size: 20px;

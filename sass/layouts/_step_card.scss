@@ -7,25 +7,30 @@
     margin: 20px 10px;
     height: 60px;
     align-items: center;
-    &.purple {
+    cursor: pointer;
+    &:hover {
         background-color: #f5edff;
+        i {
+            color: #9356DC;
+        }
     }
     .number{
         border-radius: 100%;
-        width: 20px;
-        height: 20px;
+        width: 22px;
+        height: 22px;
         background-color: #9356DC;
         color: white;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         left: -10px;
+        font-size: 14px;
+        font-weight: lighter;
     }
     i {
         color: #7e7e7e;
         margin-left: 30px;
         margin-right: 20px;
-        &.dark-purple {
-            color: #9356DC;
-        }
     }
 }
