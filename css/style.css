@@ -201,12 +201,12 @@ footer ul li a i {
   z-index: 1;
   background-color: white;
   transform: scale(1);
-  transition: transform 2s;
   transform-origin: 0% 0%;
 }
 .card a .card-footer i.fa-regular:hover {
   color: white;
   transform: scaleY(0);
+  transition: transform 1s;
 }
 .card a .card-footer i.fa-solid {
   color: transparent;
@@ -271,15 +271,31 @@ footer ul li a i {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  animation: card_appear 1s;
+  animation-fill-mode: backwards;
+}
+.card_menu.card_1 {
+  animation-delay: 200ms;
+}
+.card_menu.card_2 {
+  animation-delay: 400ms;
+}
+.card_menu.card_3 {
+  animation-delay: 600ms;
+}
+.card_menu.card_4 {
+  animation-delay: 800ms;
 }
 .card_menu:hover > .card_menu_bar {
   transform: scaleX(1);
 }
 .card_menu:hover > .card_menu_bar i {
   transform: rotate(0deg);
+  transition: transform 1s;
 }
 .card_menu .card_menu_main {
-  padding: 10px 20px 5px 10px;
+  padding: 10px 10px 5px 10px;
+  flex: 100%;
 }
 .card_menu .card_menu_main h3 {
   margin: 0px;
@@ -301,21 +317,30 @@ footer ul li a i {
 }
 .card_menu .card_menu_bar {
   background-color: #99E2D0;
-  width: 20%;
   transform: scaleX(0);
   transform-origin: 100% 50%;
-  transition: transform 1s ease-in-out;
+  transition: transform 700ms;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 20%;
 }
 .card_menu .card_menu_bar i {
   color: white;
   font-size: 20px;
   transform: rotate(-360deg);
-  transition: transform 1s ease-in-out;
 }
 
+@keyframes card_appear {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .restaurant_name {
   display: flex;
   align-items: baseline;
