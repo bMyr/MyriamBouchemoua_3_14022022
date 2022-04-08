@@ -380,12 +380,11 @@ footer ul li a i {
 .restaurant_name {
   display: flex;
   align-items: baseline;
-}
-.restaurant_name h1 {
-  margin-right: 30px;
+  justify-content: space-between;
 }
 .restaurant_name i {
   font-size: 30px;
+  margin-right: 20px;
 }
 
 .menu_button {
