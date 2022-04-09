@@ -22,6 +22,61 @@ body {
   top: -52px;
 }
 
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 60px;
+  }
+  .fonctionnement .fonctionnement_cards {
+    display: flex;
+  }
+  .fonctionnement .fonctionnement_cards .step_card {
+    padding-right: 30px;
+  }
+
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+  }
+  .restaurants .restaurant_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants .restaurant_cards .card {
+    margin: 20px;
+    width: 40%;
+  }
+
+  .menu .list_cards_menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu .list_cards_menu .card_menu {
+    width: 30%;
+  }
+  .menu .menu_button button {
+    margin: 10px;
+    margin-top: 40px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    margin: 0px 15px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -128,6 +183,7 @@ button {
 }
 button:hover {
   opacity: 0.8;
+  box-shadow: 2px 6px 22px 2px #afafaf;
 }
 
 footer {
