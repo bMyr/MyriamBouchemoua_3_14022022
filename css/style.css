@@ -459,3 +459,125 @@ footer ul li a i {
   width: 50px;
   margin-left: 15px;
 }
+
+.loader {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  transform: rotate(165deg);
+}
+.loader:before, .loader:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+.loader:before {
+  animation: before 2.5s;
+}
+.loader:after {
+  animation: after 2.5s;
+}
+
+@keyframes before {
+  0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em rgba(152, 226, 207, 0.75), -1em 0.5em rgba(152, 226, 207, 0.75);
+  }
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgba(152, 226, 207, 0.75), 0 0.5em rgba(152, 226, 207, 0.75);
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgba(152, 226, 207, 0.75), 1em 0.5em rgba(152, 226, 207, 0.75);
+  }
+  100% {
+    box-shadow: 1em -0.5em rgba(152, 226, 207, 0.75), -1em 0.5em rgba(152, 226, 207, 0.75);
+    visibility: hidden;
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgba(255, 122, 217, 0.75), -0.5em -1em rgba(146, 86, 220, 0.75);
+  }
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgba(255, 122, 217, 0.75), -0.5em 0 rgba(146, 86, 220, 0.75);
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgba(255, 122, 217, 0.75), -0.5em 1em rgba(146, 86, 220, 0.75);
+  }
+  100% {
+    box-shadow: 0.5em 1em rgba(255, 122, 217, 0.75), -0.5em -1em rgba(146, 86, 220, 0.75);
+  }
+}
+.loader {
+  position: absolute;
+  top: calc(50% - 1.25em);
+  left: calc(50% - 1.25em);
+  z-index: 21;
+}
+
+.loader-bg {
+  display: inline-block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: loader-bg 3s forwards ease-in-out;
+  z-index: 20;
+}
+
+@keyframes loader-bg {
+  0% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  70% {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    visibility: hidden;
+  }
+}
+/*
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: auto;
+  box-sizing: border-box;
+  border: 60px solid #ff79da;
+  border-color: #fface8 transparent #bc95e9 transparent;
+  animation: lds-hourglass 2.5s 1 ease-in-out forwards;
+} */
+/*
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+    opacity: 0;
+  }
+} */
