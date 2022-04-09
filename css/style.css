@@ -499,7 +499,6 @@ footer ul li a i {
   }
   100% {
     box-shadow: 1em -0.5em rgba(152, 226, 207, 0.75), -1em 0.5em rgba(152, 226, 207, 0.75);
-    visibility: hidden;
   }
 }
 @keyframes after {
@@ -524,8 +523,19 @@ footer ul li a i {
   top: calc(50% - 1.25em);
   left: calc(50% - 1.25em);
   z-index: 21;
+  animation: loader-end;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
 }
 
+@keyframes loader-end {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 .loader-bg {
   display: inline-block;
   position: fixed;

@@ -60,7 +60,6 @@ $offset: $lat - $thickness;
    box-shadow:
      $lat (-$offset) nth($colors, 1),
      (-$lat) $offset nth($colors, 3);
-     visibility: hidden;
  }
 }
 
@@ -95,4 +94,16 @@ $offset: $lat - $thickness;
  top: calc(50% - #{$size / 2});
  left: calc(50% - #{$size / 2});
  z-index: 21;
+ animation: loader-end;
+ animation-fill-mode: forwards;
+ animation-delay: 2.5s;
 }
+
+@keyframes loader-end {
+    from {
+        transform: scale(1);   
+    }
+    to {
+        transform: scale(0);   
+    }
+   }
