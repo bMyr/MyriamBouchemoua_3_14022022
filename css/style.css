@@ -65,10 +65,15 @@ footer li {
 
 header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 15px;
-  flex-direction: row-reverse;
-  align-items: baseline;
-  padding: 0px 20px;
+  position: relative;
+}
+header a {
+  position: absolute;
+  left: 10px;
+  top: 8px;
 }
 header a i {
   font-size: 20px;

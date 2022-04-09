@@ -1,10 +1,13 @@
 header {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 15px;
-    flex-direction: row-reverse;
-    align-items: baseline;
-    padding: 0px 20px;
+    position: relative;
     a {
+        position: absolute;
+        left: 10px;
+        top: 8px;
         i {
             font-size: 20px;
             color: #353535;
